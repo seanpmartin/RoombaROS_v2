@@ -16,20 +16,38 @@ library, whose functions are used to drive the Roomba's sensors.
 https://github.com/MomsFriendlyRobotCompany/pycreate2
 ```
 
-The following hardware is used: An iRobot Create2
+## Intro
+Things needed before starting:
 
-A Raspberry Pi3 w/ Unbuntu 16.04 and ROS Kinetic installed.
+iRobot Create 2:
+http://www.irobot.com/About-iRobot/STEM/Create-2.aspx
 
-To download to a Raspberry Pi follow the below command line
+Raspberry Pi 3:
+https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY
+
+=> flash fresh image of Ubuntu 16.04 LTS
+
+ROS Kinetic:
+http://wiki.ros.org/Installation/UbuntuARM
+
+**Also visit http://wiki.ros.org for all things ROS related - like setting up packages and workspace**
+
+Pycreate2 Python Package: 
+https://pypi.python.org/pypi/pycreate2
+
+## ROS
+To download to Raspberry Pi 3, follow the below command line
 steps. This will initialize a workspace called irobot
 for Roomba ROS packages
 ```
+### **Initialize Workspace**
 mkdir ~/irobot/src
 cd ~/irobot/src
 catkin_init_workspace
 cd ..
 catkin_make
 
+### **Create Package**
 cd ~/irobot/src
 git clone https://github.com/spm1200/RoombaROS_v1
 cd ~/irobot
