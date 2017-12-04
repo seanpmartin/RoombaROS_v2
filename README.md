@@ -60,18 +60,24 @@ Terminal 2 [run publisher]:
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
 source develop/setup.bash
-rosrun RoombaROS_v1  rangestate.py
+rosrun RoombaROS_v2  IR_pub.py
 ```
-
-Terminal 3 [run subscriber]:
+Terminal 3 [wheel subscriber]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
 source develop/setup.bash
-rosrun RoombaROS_v1  listener.py
+rosrun RoombaROS_v2  wheel_sub.py
+```
+Terminal 4 [navigator pub/sub]:
+```
+export ROS_MASTER_URI=http://[pi_ip_address]:11311
+export ROS_IP=[pi_ip_address]
+source develop/setup.bash
+rosrun RoombaROS_v2  navigator.py
 ```
 
-From here, the 6IR sensor states and 
-wheel velocities will be displayed.
+
+The flowchart below represents each ROS node and messages.
 
 ![ros nav](https://github.com/asoussan/markdown_images/blob/master/ros%20diagram.png)
