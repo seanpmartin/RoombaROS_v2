@@ -1,5 +1,5 @@
-# RoombaROS_v2 ECE 4422
-Project 4 Submission. Sean Martin, Brahima Fanny, Alex Soussan
+# RoombaROS_v2
+ECE 4422 Project 4 Submission. Sean Martin, Brahima Fanny, Alex Soussan
 
 This project consists of a ROS package which communicates with
 a iRobot Create2 Roomba over a serial port USB connection from a Raspberry Pi3.
