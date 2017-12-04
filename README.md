@@ -1,4 +1,4 @@
-# RoombaROS_v2 ECE 422
+# RoombaROS_v2 ECE 4422
 Project 4 Submission. Sean Martin, Brahima Fanny, Alex Soussan
 
 This project consists of a ROS package which communicates with
