@@ -49,12 +49,12 @@ catkin_make
 
 ### **Create Package**
 cd ~/irobot/src
-git clone https://github.com/spm1200/RoombaROS_v1
+git clone https://github.com/spm1200/RoombaROS_v2
 cd ~/irobot
 rosdep update
 rosdep install --from-paths src -i -y
 catkin_make
-source ./develop/setup.bash
+source ./devel/setup.bash
 ```
 
 To ensure the USB connection will work on the Pi
@@ -77,21 +77,21 @@ Terminal 2 [run publisher]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
-source develop/setup.bash
+source devel/setup.bash
 rosrun RoombaROS_v2  IR_pub.py
 ```
 Terminal 3 [wheel subscriber]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
-source develop/setup.bash
+source devel/setup.bash
 rosrun RoombaROS_v2  wheel_sub.py
 ```
 Terminal 4 [navigator pub/sub]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
-source develop/setup.bash
+source devel/setup.bash
 rosrun RoombaROS_v2  navigator.py
 ```
 
