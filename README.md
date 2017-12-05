@@ -73,26 +73,27 @@ export ROS_IP=[pi_ip_address]
 roscore
 ```
 
-Terminal 2 [run publisher]:
+Terminal 2 [IR publisher]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
 source devel/setup.bash
 rosrun RoombaROS_v2  IR_pub.py
 ```
-Terminal 3 [wheel subscriber]:
-```
-export ROS_MASTER_URI=http://[pi_ip_address]:11311
-export ROS_IP=[pi_ip_address]
-source devel/setup.bash
-rosrun RoombaROS_v2  wheel_sub.py
-```
-Terminal 4 [navigator pub/sub]:
+Terminal 3 [navigator pub/sub]:
 ```
 export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
 source devel/setup.bash
 rosrun RoombaROS_v2  navigator.py
+rosrun RoombaROS_v2  wheel_sub.py
+```
+Terminal 4 [wheel subscriber]:
+```
+export ROS_MASTER_URI=http://[pi_ip_address]:11311
+export ROS_IP=[pi_ip_address]
+source devel/setup.bash
+rosrun RoombaROS_v2  wheel_sub.py
 ```
 
 
