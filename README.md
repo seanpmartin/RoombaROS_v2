@@ -1,5 +1,5 @@
 # RoombaROS_v2
-Project 4 Submission. Sean Martin, Brahima Fanny, Alex Soussan
+Project 4 Submission. Sean Martin, Alex Soussan, Brahima Fanny
 
 This project consists of a ROS package which communicates with
 a iRobot Create2 Roomba over a serial port USB connection from a Raspberry Pi3.
@@ -36,7 +36,7 @@ Pycreate2 Python Package:
 https://pypi.python.org/pypi/pycreate2
 
 ## ROS
-To download to Raspberry Pi 3, follow the below command line
+To download the package to Raspberry Pi 3, follow the below command line
 steps. This will initialize a workspace called irobot
 for Roomba ROS packages
 ```
