@@ -39,15 +39,18 @@ https://pypi.python.org/pypi/pycreate2
 To download the package to Raspberry Pi 3, follow the below command line
 steps. This will initialize a workspace called irobot
 for Roomba ROS packages
-```
+
 ### **Initialize Workspace**
+```
 mkdir ~/irobot/src
 cd ~/irobot/src
 catkin_init_workspace
 cd ..
 catkin_make
+```
 
 ### **Create Package**
+```
 cd ~/irobot/src
 git clone https://github.com/spm1200/RoombaROS_v2
 cd ~/irobot
