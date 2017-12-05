@@ -65,9 +65,9 @@ run the below command
 ```
 sudo usermod -a -G dialout $USER
 ```
-
+### **Run Package**
 To run the ROS package, three terminal windows are needed.
-Run the commands shown for each 3 below.
+Run the commands shown for each 4 below.
 
 Terminal 1 [run roscore]:
 ```
