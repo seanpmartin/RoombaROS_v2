@@ -59,13 +59,13 @@ rosdep install --from-paths src -i -y
 catkin_make
 source ./devel/setup.bash
 ```
-
+### **Run Package**
 To ensure the USB connection will work on the Pi
 run the below command
 ```
 sudo usermod -a -G dialout $USER
 ```
-### **Run Package**
+
 To run the ROS package, three terminal windows are needed.
 Run the commands shown for each 4 below.
 
