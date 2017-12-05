@@ -86,7 +86,6 @@ export ROS_MASTER_URI=http://[pi_ip_address]:11311
 export ROS_IP=[pi_ip_address]
 source devel/setup.bash
 rosrun RoombaROS_v2  navigator.py
-rosrun RoombaROS_v2  wheel_sub.py
 ```
 Terminal 4 [wheel subscriber]:
 ```
